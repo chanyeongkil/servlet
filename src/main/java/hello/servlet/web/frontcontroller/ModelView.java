@@ -3,6 +3,9 @@ package hello.servlet.web.frontcontroller;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Servlet에 종속적인 HttpRequest를 사용하지 않기위해 별도의 Model 생성
+ * */
 public class ModelView {
     private String viewName;
     private Map<String, Object> model = new HashMap<>();
